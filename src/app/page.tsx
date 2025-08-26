@@ -2,11 +2,11 @@
 import Image from 'next/image';
 import { AnimatedRetroText } from '@/components/text/AnimatedRetroText';
 import ContentTextbox from '@/components/textbox/ContentTextbox';
-import { SimpleHero } from '@/components/sections/layouts/hero/SimpleHero';
+import SimpleHero from '@/components/sections/layouts/hero/SimpleHero';
 import MinimalAbout from '@/components/sections/layouts/about/MinimalAbout';
 import GalleryBento from '@/components/bento/galleryBento/GalleryBento';
 import ProcessTimeline from '@/components/timeline/ProcessTimeline';
-import Testimonials from '@/components/sections/layouts/faq/ImageFAQ';
+import ImageFAQ from '@/components/sections/layouts/faq/ImageFAQ';
 import SimpleFooter from '@/components/sections/layouts/footer/SimpleFooter';
 
 const HeroSection = () => (
@@ -44,7 +44,7 @@ const ProcessSection = () => (
 );
 
 const TestimonialsSection = () => (
-  <Testimonials
+  <ImageFAQ
     items={[
       { title: 'Amazing experience!', content: 'The photos turned out better than I could have imagined.' },
       { title: 'Highly Recommend!', content: 'Professional, creative, and amazing results!' }
