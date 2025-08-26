@@ -56,7 +56,7 @@ const ContactSection = () => (
     <h2 className="text-2xl font-bold">Get in Touch</h2>
     <ContentTextbox
       title={<h3>Contact Us</h3>}
-      description={<p>We'd love to hear from you!</p>}
+      description={<p>We&apos;d love to hear from you!</p>}
     >
       <div className="flex items-center gap-3 sm:gap-4">
         <button className="bg-blue-500 text-white p-2 rounded">Send Message</button>
