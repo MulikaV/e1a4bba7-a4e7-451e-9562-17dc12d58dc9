@@ -8,7 +8,6 @@ import GalleryBento from '@/components/bento/galleryBento/GalleryBento';
 import ProcessTimeline from '@/components/timeline/ProcessTimeline';
 import Testimonials from '@/components/sections/layouts/faq/ImageFAQ';
 import SimpleFooter from '@/components/sections/layouts/footer/SimpleFooter';
-import ContactForm from 'react-json-contact-form';
 
 const HeroSection = () => (
   <SimpleHero
@@ -56,15 +55,14 @@ const TestimonialsSection = () => (
 const ContactSection = () => (
   <div className="bg-gradient-to-r from-blue-400 to-green-400 p-6 rounded-lg">
     <h2 className="text-2xl font-bold">Get in Touch</h2>
-    <ContactForm
-      fields={[
-        { name: 'name', label: 'Name', required: true },
-        { name: 'email', label: 'Email', required: true },
-        { name: 'message', label: 'Message', required: true }
-      ]}
-      onSubmit={() => alert('Form submitted successfully!')}
-      submitButtonText="Send"
-    />
+    <ContentTextbox
+      title={<h3>Contact Us</h3>}
+      description={<p>We'd love to hear from you!</p>}
+    >
+      <div className="flex items-center gap-3 sm:gap-4">
+        <button className="bg-blue-500 text-white p-2 rounded">Send Message</button>
+      </div>
+    </ContentTextbox>
   </div>
 );
 
