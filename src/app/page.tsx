@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image';
 import { AnimatedRetroText } from '@/components/text/AnimatedRetroText';
 import ContentTextbox from '@/components/textbox/ContentTextbox';
 import SimpleHero from '@/components/sections/layouts/hero/SimpleHero';
